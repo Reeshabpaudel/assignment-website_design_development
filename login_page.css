@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#ECEDF3 ;
+    width: 100%;
+    height: 100%;
+}
+.main{
+   display: flex;
+   padding: 0;
+   margin: 0;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+.info{
+    display: flex;
+    height: 500px;
+    width: 326px;
+    padding: 0;
+    margin: 0;
+    background-image: url('login_info.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 0px 0px 20px;
+}
+.login{
+    display: flex;
+    height: 500px;
+    width: 326px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 0px 20px 20px 0px;
+}
+.login p{
+    margin-top:15%;
+    font-size: 36px;
+    font-family: 'Inter';
+    padding-left: 33%;
+    font-weight: 400;
+    color: #003366;
+    margin-bottom: 5%;
+}
+.form{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+.form div{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+} 
+.form form img{
+    height: 20px;
+    margin-left: 16rem;
+    width: 20px;
+    z-index: 99;
+} 
+label{
+    margin-top: 500px;
+    font-family: 'Inter';
+    color: #003366;
+    font-size: 26px;
+    font-weight: 300;
+}
+input[type="textbox"]{
+    width: 300px;
+    height:40px;
+    background-color:  #D2E6FC;
+    border: none;
+    display: flex;
+    position: absolute;
+}
+input[type="password"]{
+    width: 300px;
+    height: 40px;
+    background-color:  #D2E6FC;
+    border: none;
+    display: flex;
+    position: absolute;
+}
+input::placeholder{
+    font-family: 'Inter';
+    font-size: 14px;
+    color: rgba(0,0,0,80%);
+    padding-left: 4%;
+}
+input[type="submit"] {
+    display: block;
+    height: 40px;
+    width: 100%;
+    font-family: 'Inter';
+    font-size: 18px;
+    color: #4B0082;
+    background-color: #B3FFAD;
+    border: none;
+    margin-top: 20%;
+    margin-bottom: 0px;
+}
+.other_options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.other_options button{
+    display: inline-block;
+    height: 100%;
+    width: 43%;
+    font-family: 'Inter';
+    font-size: 15px;
+    color: #4B0082;
+    background-color: #FFFE89;
+    border: none;
+    margin: 2%;
+}

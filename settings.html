@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="settings.css">
+        <title>settings_page</title>
+        <meta name="description" content="description of page">
+        <meta name="keywords" content="keywords for page">
+        <script src="scripts/html5shiv.js"></script>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\images\logo.png" class="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="new_home_page.html"><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\home_vector.png" class="link">Home</a></li>
+                        <li><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\line_vector.png"></li>
+                        <li><a href="destination_page"><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\destination_vector.png" class="link">Destination</a></li>
+                        <li><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\line_vector.png"></li> 
+                        <li><a href="about_us.html"><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\about_us_vector.png" class="link">About Us/Info</a></li>
+                        <li><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\line_vector.png"></li>
+                        <li><a href="settings.html"><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\settings_vector.png" class="link">Settings</a></li>
+                        <li><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\line_vector.png"></li>
+                        <li><img src="C:\Users\hp\Desktop\Sunway\website_design_and_development\site1\graphics\profile_circle_vector.png" class="link" id="profile"></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+        <section class="main">
+            <div class="side_panel">
+                <p id="name">User's Name</p>
+                <div id="number">
+                    <img src="call.png" id="call_img"><p>+977 9849...</p>
+                </div>
+                <div class="image">
+                    <button class="del_img_btn"><img src="delete.png" id="delete_img"></button>
+                    <img src="stock_profile.png" id="profile_img">
+                </div>
+                <p id="email">@email</p>
+                <button class="upload_pic_btn"> Upload new Photo</button>
+                <div class="description">
+                    <p>Upload a new avatar. Larger images will be resized <br>automatically<br> Maximum Upload size is <span>4MB</span></p>
+                </div>
+                <div class="bottom_des">
+                    <p>Member since <span>29 September 2022</span></p>
+                </div>
+            </div>
+            <div class="main_panel">
+                <div class="top">
+                    <p>General Settings</p>
+                    <div class="sign">
+                        <img src="sign.png">
+                        <p>sign out</p>
+                    </div>
+                </div>
+                <div class="middle">
+                    <form action="login_page.html">
+                        <div class="line" id="line1">
+                            <div class="r1" id="take_name">
+                                <label for="full_name">Full Name</label>
+                                <br>
+                                <input type="textbox" id="full_name" placeholder="Reeshab Paudel">
+                            </div>
+                            <div class="r2" id="take_number">
+                                <label for="phone_number">Phone Number</label>
+                                <br>
+                                <input type="textbox" id="phone_number" placeholder="(+977)^9849230510">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="r1" id="pass">
+                                <label for="password">Password</label>
+                                <br>
+                                <input type="password" id="password" placeholder="************">
+                                <!-- <img src="eye.png"> -->
+                            </div>
+                            <div class="r2" id="confirm_pass">
+                                <label for="confirm_password">Confirm Password</label>
+                                <br>
+                                <input type="password" id="confirm_password" placeholder="************">
+                                <img src="eye.png">
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="r1" id="mail">
+                                <label for="email">Email Address</label>
+                                <br>
+                                <input type="textbox" id="email_" placeholder="reeshab111@gmail.com">
+                            </div>
+                            <div class="r2" id="confirm_mail">
+                                <label for="confirm_email">Confirm Email Address</label>
+                                <br>
+                                <input type="textbox" id="confirm_email" placeholder="reeshab111@gmail.com">
+                            </div>
+                        </div>
+                        <div class="last_line">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">Agree to <a href="">Terms and Conditions</a></label>
+                            <input type="submit" value="Update Info">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section clas="footer">
+            <footer>
+                <p>Wish you a SMART travel!!!</p>
+             </footer>
+        </section>
+    </body>
+</html>
