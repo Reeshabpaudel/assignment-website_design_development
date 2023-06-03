@@ -47,6 +47,67 @@ nav{
     height: 35px;
     width: 35px;
 }
+.open_menu, .close_menu{
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+.open_menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close_menu{
+    top: 20px;
+    right: 20px;
+
+}
+#check{
+    display: none;
+}
+@media(max-width:1200px){
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 130vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #C8D9EEF2;
+        transition: all 300ms ease-in-out ;
+    }
+    .nav-links li a img{
+        display: none;
+    }
+    .line, #profile{
+        display: none;
+    }
+    .nav-links ul li{
+        display: flex;
+        list-style: none;
+        padding: 12%;
+    }
+    .nav-links ul li a{
+        display: flex;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Inter';
+    }
+    .open_menu, .close_menu{
+        display: block;
+    }
+    #check{
+        display: none;
+    }
+   
+    
+    #check:checked ~ .nav-links {right: 0;}
+}
 .main{
     display: flex;
     width: 100%;
@@ -57,12 +118,20 @@ nav{
     flex-direction: column;
 }
 .main_map{
-    background-color: blue;
     height: 30%;
     width: 98%;
     margin-top: 3%;
 }
+/* .lower_elements{
+    background-image: url('road_dimmed.png');
+    background-size: cover;
+    height: 40%;
+    width: 92%;
+    margin-top: 5%;
+    border-radius: 15px;
+} */
 .lower_elements{
+    display: flex;
     background-image: url('road.png');
     background-size: cover;
     position: relative;
@@ -71,6 +140,7 @@ nav{
     height: 40%;
     width: 92%;
     margin-top: 5%;
+    border-radius: 15px;
 }
 .lower_elements::before{
     content: '';
@@ -83,20 +153,43 @@ nav{
     z-index: -1;
 }
 .aux_map{
-    background-color: green;
+    border-radius: 15px;
     height: 100%;
     width: 50%;
+    background-color: yellow;
 }
 .extras_container{
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
 }
 iframe{
     height: 100%;
     width: 100%;
 }
-
-
+button{
+    height: 20%;
+    width: 50%;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 43p;
+    text-transform: uppercase;
+    margin: 2%;
+    border-radius: 17px;
+    background-color: #FFFE89;
+    color: #5353fd;
+}
+button:hover{
+    color: white;
+    background-color: #7474fe;
+    border: #8294c4;
+    text-decoration: underline;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
 footer {
     position: bottom;
     height: 50px;
