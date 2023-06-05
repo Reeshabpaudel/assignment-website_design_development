@@ -2,8 +2,8 @@
 <html lang="en-GB">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="login_page.css">
-        <title>login page</title>
+        <link rel="stylesheet" href="test_login.css">
+        <title>responsive test login page</title>
         
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
         <meta name="description" content="description of page">
@@ -14,17 +14,21 @@
         <section class="main">
             <div class="info"></div>
             <div class="login">
-               <p>LOGIN</p>
-               <div class="form">
+            <p>LOGIN</p>
+            <div class="form">
                     <form action="new_home_page.html">
                         <label for="username">Username</label><br>
-                        <div>
+                        <div class="uname">
                             <input type="textbox" name="username" id="username" placeholder="email or phone number" required>
                             <img src="mail.png">
                         </div>
+                    
                         <br>
-                        <label for="password">Password</label><br>
-                        <div><input type="password" name="password" id="password" placeholder="password" required><img src="eye.png"></div>
+                        <label for="password" id="second">Password</label><br>
+                        <div class="pass">
+                            <input type="password" name="password" id="password" placeholder="password" required>
+                            <img src="eye.png">
+                        </div>
                         <input type="submit" value="login">
                     </form>
                 </div>
@@ -36,5 +40,6 @@
                 </div>
             </div>
         </section>
-    </body>
+    </body> 
+
 </html>

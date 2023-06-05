@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Inter:wght@100;200;300;400;600&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
+*{
     margin: 0;
     padding: 0;
 }
@@ -69,7 +70,7 @@ nav{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         width: 80%;
         height: 130vh;
         position: fixed;
@@ -77,6 +78,7 @@ nav{
         right: -100%;
         z-index: 100;
         background-color: #C8D9EEF2;
+        padding-top: 30rem;
         transition: all 300ms ease-in-out ;
     }
     .nav-links li a img{
@@ -88,7 +90,8 @@ nav{
     .nav-links ul li{
         display: flex;
         list-style: none;
-        padding: 12%;
+        margin: 12%;
+        text-align: center;
     }
     .nav-links ul li a{
         display: flex;
@@ -96,15 +99,77 @@ nav{
         text-decoration: none;
         text-transform: uppercase;
         font-family: 'Inter';
+        font-size: 50px;
+        margin: auto;
     }
     .open_menu, .close_menu{
         display: block;
     }
+    .open_menu img{
+        height: 60px;
+        width: 60px;
+    }
+    .close_menu img{
+        height: 100px;
+        width: 100px;
+    }
     #check{
         display: none;
     }
-   
-    
+    .logo{
+        height: 200px;
+        width: 600px;
+    }
+    .main{
+        height: 87vh !important;
+        background-size: contain !important; 
+        background-repeat: no-repeat;
+        /* background-image: url("burger.png"); */
+
+    }
+    .main .location .location_text p{
+        font-size: 60px;
+    }
+    .main .location .location_text img{
+        height: 80px;
+        width: 60px;
+    }
+    .main .location .search-bar{
+        height: 100px ;
+        width: 800px ;
+        border-radius: 80px;
+        margin-bottom: 350px;
+        align-items: center;
+        justify-content: center;
+    }
+    .main .search-ticket #have_ticket{
+        font-size: 60px;
+    }
+    .main .location input::placeholder{
+        font-size: 50px;
+    }
+    .main .search-ticket .ticket{
+        height: 80px;
+        width: 600px;
+        border-radius: 60px;
+    }
+    .main .search-ticket input::placeholder{
+        font-size: 30px;
+    }
+    #ser-img{
+        position: absolute;
+        padding: 0;
+        padding-bottom: 335px;
+        height: 50px;
+        width: 50px;
+    }
+    #ser-ticket-img{
+        height: 40px;
+        width: 40px;
+    }
+    input[type=text]{
+        font-size: 50px !important;
+    }
     #check:checked ~ .nav-links {right: 0;}
 }
 .main{

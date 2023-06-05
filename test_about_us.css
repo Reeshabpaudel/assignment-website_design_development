@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Inter:wght@100;200;300;400;600&display=swap');*{
     margin: 0;
     padding: 0;
 }
@@ -7,7 +6,8 @@ body{
     background-color:#ECEDF3 ;
 }
 .header{
-    width:100%;
+    width: 100;
+    max-width:100%; 
     background-color: #FFFE89;
     position: relative;
 }
@@ -66,11 +66,14 @@ nav{
     display: none;
 }
 @media(max-width:1200px){
+    /* .header{
+        width: 100% !important;
+    } */
     .nav-links{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        /* justify-content: center; */
         width: 80%;
         height: 130vh;
         position: fixed;
@@ -79,6 +82,7 @@ nav{
         z-index: 100;
         background-color: #C8D9EEF2;
         transition: all 300ms ease-in-out ;
+        padding-top: 30rem;
     }
     .nav-links li a img{
         display: none;
@@ -89,7 +93,8 @@ nav{
     .nav-links ul li{
         display: flex;
         list-style: none;
-        padding: 12%;
+        margin: 12%;
+        text-align: center;
     }
     .nav-links ul li a{
         display: flex;
@@ -97,15 +102,39 @@ nav{
         text-decoration: none;
         text-transform: uppercase;
         font-family: 'Inter';
+        font-size: 50px;
+        margin: auto;
     }
     .open_menu, .close_menu{
         display: block;
     }
+    .open_menu img{
+        height: 60px;
+        width: 60px;
+    }
+    .close_menu img{
+        height: 100px;
+        width: 100px;
+    }
     #check{
         display: none;
     }
-   
-    
+    .logo{
+        height: 200px;
+        width: 600px;
+    }
+    #exception{
+        height: 100%;
+        width: 100%;
+        margin-left: 0%;
+    }
+    .main .box .block #move{
+        margin-right: 0%;
+        position: left;
+    }
+    .main .intro p{
+        font-size: 42px;
+    }
     #check:checked ~ .nav-links {right: 0;}
 }
 
@@ -186,6 +215,10 @@ nav{
     flex-direction: row;
     align-items: center;
 }
+#move{
+    padding-right: 5rem;
+    
+}
 #main_heading{
     display: flex;
     font-family: 'Inter';
@@ -204,11 +237,10 @@ nav{
 .text1{
     display: flex;
     height: 100%;
-    width: 55%;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: cent;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 24px;
